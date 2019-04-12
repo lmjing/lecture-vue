@@ -1,7 +1,8 @@
-import FormView from './views/FormView.js'
 import MainController from './controllers/MainController.js'
 
+const tag = '[app]'
+
 document.addEventListener('DOMContentLoaded', () => {
+   console.log(tag, 'DOMContentLoaded')
    MainController.init();
-   FormView.setup(document.querySelector('form'));
 });
