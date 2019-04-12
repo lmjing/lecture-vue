@@ -19,12 +19,22 @@ FormView.setup = function (el) {
     this.resetEl = el.querySelector('[type=reset')
     // 처음엔 입력 값이 없으니 reset 버튼 안보이도록 함
     this.showResetButton(false)
+    this.bindEvents();
 }
 
 // 매개변수의 디폴트 값은 true이다.
 FormView.showResetButton = function (show = true) {
     // reset 버튼이 스타일 속성을 바꿔준다.
     this.resetEl.style.display = show ? 'block' : 'none'
+}
+
+FormView.bindEvents = function () {
+    this.inputEl.addEventListener('keyup', evt => this.onkeyup(evt))
+}
+
+FormView.onkeyup = function () {
+    // value 길이가 1이상일 때 true
+    this.showResetButton(this.inputEl.value.length)
 }
 
 export default FormView
