@@ -16,7 +16,7 @@ FormView.setup = function (el) {
      */
     // el로 부터 필요한 하위 엘리먼트 가져와 셋팅
     this.inputEl = el.querySelector('[type=text]')
-    this.resetEl = el.querySelector('[type=reset')
+    this.resetEl = el.querySelector('[type=reset]')
     // 처음엔 입력 값이 없으니 reset 버튼 안보이도록 함
     this.showResetButton(false)
     this.bindEvents()
@@ -34,13 +34,17 @@ FormView.bindEvents = function () {
     // input 엘리먼트에서 엔터키는 폼전송을 위해 화면 갱신이 이뤄지는데 이걸 e.preventDefault() 함수로 방지
     this.on('submit', e => e.preventDefault())
     // type : keyup(key 입력)
-    this.inputEl.addEventListener('keyup', evt => this.onKeyup(evt))
+    this.inputEl.addEventListener('keyup', e => this.onKeyup(e))
+    // reset 버튼이 눌리면 검색 결과를 삭제한다.
+    this.resetEl.addEventListener('click', e => this.deleteInputText())
 }
 
 FormView.onKeyup = function (e) {
     // value 길이가 1이상일 때 true
     const enter = 13;
     this.showResetButton(this.inputEl.value.length)
+    // 검색어가 없을 경우 mainController에 알림
+    if (!this.inputEl.value.length) this.emit('@reset')
     if (e.keyCode !== enter) {
         console.log(tag, 'onKeyup()', 'not enter')
         return
@@ -53,6 +57,11 @@ FormView.onKeyup = function (e) {
     // 엔터 키 눌렸을 때 입력 값 전달
     console.log(tag, 'onKeyup()', 'enter')
     this.emit('@submit', { input : this.inputEl.value })
+}
+
+FormView.deleteInputText = function () {
+    this.emit('@reset')
+    this.showResetButton(false)
 }
 
 export default FormView
