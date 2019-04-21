@@ -19,6 +19,8 @@ new Vue({
         },
         onResetForm() {
           this.query = ''
+          this.submitted = false
+          this.searchResult = []
         },
         search() {
             SearchModel.list().then(data => {
