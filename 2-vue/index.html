@@ -36,7 +36,14 @@
               {{ tab }}
             </li>
           </ul>
-          <div v-for="tab in tabs" v-show="tab === selectedTab">{{tab}} 목록</div>
+          <div v-if="selectedTab === tabs[0] && keywords.length">
+            <ul class="list">
+              <li v-for="(item, index) in keywords" v-on:click="onClickKeyword(item.keyword)">
+                <span class="number">{{ index + 1 }}</span> {{ item.keyword }}
+              </li>
+            </ul>
+          </div>
+          <div v-else></div>
         </div>
 
       </div>

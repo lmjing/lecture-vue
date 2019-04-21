@@ -1,4 +1,5 @@
 import SearchModel from './models/SearchModel.js'
+import KeywordModel from './models/KeywordModel.js'
 
 new Vue({
   el: '#app',
@@ -7,13 +8,20 @@ new Vue({
       submitted: false,
       tabs: ['추천 검색어', '최근 검색어'],
       selectedTab: '', // 여기서 정의하지 않으면 탭 클릭 동작 정확히 되지 않음
-      searchResult: []
+      searchResult: [],
+      keywords: []
   },
     created() {
       // lifeCycle 중 처음 생성이 완료되었을 때 호출됨
         this.selectedTab = this.tabs[0]
+        this.fetchKeyword()
     },
     methods: {
+        fetchKeyword() {
+            KeywordModel.list().then(data => {
+                this.keywords = data
+            })
+        },
       onSubmit(e) {
           this.search()
       },
@@ -24,7 +32,7 @@ new Vue({
           if (!this.query.length) this.onResetForm()
         },
         onResetForm() {
-          data.query = ''
+          this.query = ''
           this.submitted = false
           this.searchResult = []
         },
@@ -36,6 +44,10 @@ new Vue({
         },
         onClickTab(tabName) {
           this.selectedTab = tabName
+        },
+        onClickKeyword(keyword) {
+            this.query = keyword
+            this.search()
         }
     }
 })
