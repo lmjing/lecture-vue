@@ -52,7 +52,8 @@
                 <li v-for="(item, index) in history" v-on:click="onClickKeyword(item.keyword)">
                   {{ item.keyword }}
                   <span class="date">{{ item.date }}</span>
-                  <button class="btn-remove"></button>
+                  <!--  stop으로 click 버븥링을 막는다   -->
+                  <button class="btn-remove" v-on:click.stop="onClickRemoveHistory(item.keyword)"></button>
                 </li>
               </ul>
             </div>

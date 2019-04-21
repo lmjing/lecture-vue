@@ -49,6 +49,8 @@ new Vue({
                 this.submitted = true
                 this.searchResult = data
             })
+            HistoryModel.add(this.query)
+            this.fetchHistory()
         },
         onClickTab(tabName) {
           this.selectedTab = tabName
@@ -56,6 +58,10 @@ new Vue({
         onClickKeyword(keyword) {
             this.query = keyword
             this.search()
+        },
+        onClickRemoveHistory(history) {
+            HistoryModel.remove(history)
+            this.fetchHistory()
         }
     }
 })
