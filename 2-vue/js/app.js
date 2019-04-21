@@ -5,8 +5,13 @@ new Vue({
   data: {
       query: '',
       submitted: false,
+      tabs: ['추천 검색어', '최근 검색어'],
       searchResult: []
   },
+    created() {
+      // lifeCycle 중 처음 생성이 완료되었을 때 호출됨
+        this.selectedTab = this.tabs[0]
+    },
     methods: {
       onSubmit(e) {
           this.search()
@@ -18,7 +23,7 @@ new Vue({
           if (!this.query.length) this.onResetForm()
         },
         onResetForm() {
-          this.query = ''
+          data.query = ''
           this.submitted = false
           this.searchResult = []
         },
