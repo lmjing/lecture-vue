@@ -6,6 +6,7 @@ new Vue({
       query: '',
       submitted: false,
       tabs: ['추천 검색어', '최근 검색어'],
+      selectedTab: '', // 여기서 정의하지 않으면 탭 클릭 동작 정확히 되지 않음
       searchResult: []
   },
     created() {
@@ -32,6 +33,9 @@ new Vue({
                 this.submitted = true
                 this.searchResult = data
             })
+        },
+        onClickTab(tabName) {
+          this.selectedTab = tabName
         }
     }
 })
