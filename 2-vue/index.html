@@ -19,11 +19,7 @@
          <result-form v-bind:data="searchResult" v-bind:query="query"></result-form>
         </div>
         <div v-else>
-          <ul id="tabs" class="tabs">
-            <li v-for="tab in tabs" v-bind:class="{active: tab === selectedTab}" v-on:click="onClickTab(tab)">
-              {{ tab }}
-            </li>
-          </ul>
+          <tab v-bind:data="tabs" v-bind:selected-tab="selectedTab" v-on:@change="onClickTab"></tab>
           <div v-if="selectedTab === tabs[0]">
             <list v-bind:data="keywords" type="keyword" v-on:@click="onClickKeyword"></list>
           </div>
@@ -73,4 +69,12 @@
   </div>
   <div v-else-if="keywordType">추천 검색어가 없습니다.</div>
   <div v-else-if="historyType">최근 검색어가 없습니다.</div>
+</template>
+
+<template id="tab">
+  <ul id="tabs" class="tabs">
+    <li v-for="tab in data" v-bind:class="{active: tab === selectedTab}" v-on:click="onClickTab(tab)">
+      {{ tab }}
+    </li>
+  </ul>
 </template>

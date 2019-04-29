@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="670035f1-64fb-4437-91b0-85207d912fbd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/2-vue/js/components/ListComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2-vue/js/components/TabComponent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2-vue/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/2-vue/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2-vue/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/2-vue/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-vue/js/components/FormComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/2-vue/js/components/FormComponent.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,11 +18,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/2-vue/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
-              <caret line="74" column="29" selection-start-line="74" selection-start-column="29" selection-end-line="74" selection-end-column="29" />
+            <state relative-caret-position="180">
+              <caret line="21" column="80" selection-start-line="21" selection-start-column="80" selection-end-line="21" selection-end-column="80" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/2-vue/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-997" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/2-vue/js/components/TabComponent.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="31" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -58,8 +73,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/2-vue/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="795">
-              <caret line="65" column="32" lean-forward="true" selection-start-line="65" selection-start-column="32" selection-end-line="65" selection-end-column="32" />
+            <state relative-caret-position="780">
+              <caret line="63" column="18" selection-start-line="63" selection-start-column="8" selection-end-line="63" selection-end-column="18" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
               </folding>
@@ -67,29 +82,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/2-vue/js/components/FormComponent.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="24" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/1-vanilla/js/models/KeywordModel.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/1-vanilla/js/models/HistoryModel.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="2" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
+            <state relative-caret-position="60">
+              <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -128,6 +125,7 @@
       <find>current</find>
       <find>getKeywordsHtml</find>
       <find>onReset</find>
+      <find>onClickTab</find>
       <find>list</find>
     </findStrings>
   </component>
@@ -150,10 +148,11 @@
         <option value="$PROJECT_DIR$/2-vue/js/components/FormComponents.js" />
         <option value="$PROJECT_DIR$/2-vue/js/components/SearchForm.js" />
         <option value="$PROJECT_DIR$/2-vue/js/components/ResultComponent.js" />
-        <option value="$PROJECT_DIR$/2-vue/js/app.js" />
-        <option value="$PROJECT_DIR$/2-vue/index.html" />
         <option value="$PROJECT_DIR$/2-vue/js/components/ListComponent.js" />
         <option value="$PROJECT_DIR$/2-vue/js/components/FormComponent.js" />
+        <option value="$PROJECT_DIR$/2-vue/js/app.js" />
+        <option value="$PROJECT_DIR$/2-vue/js/components/TabComponent.js" />
+        <option value="$PROJECT_DIR$/2-vue/index.html" />
       </list>
     </option>
   </component>
@@ -256,12 +255,12 @@
       <option name="presentableId" value="Default" />
       <updated>1555056299049</updated>
       <workItem from="1555056301675" duration="1230000" />
-      <workItem from="1556518093344" duration="4739000" />
+      <workItem from="1556518093344" duration="5423000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22919000" />
+    <option name="totallyTimeSpent" value="23603000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -389,13 +388,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/2-vue/js/components/ResultComponent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/2-vue/js/models/SearchModel.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -403,20 +395,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/2-vue/js/app.js">
+    <entry file="file://$PROJECT_DIR$/2-vue/js/components/ResultComponent.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="795">
-          <caret line="65" column="32" lean-forward="true" selection-start-line="65" selection-start-column="32" selection-end-line="65" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2-vue/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="74" column="29" selection-start-line="74" selection-start-column="29" selection-end-line="74" selection-end-column="29" />
+        <state relative-caret-position="30">
+          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -429,8 +411,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/2-vue/js/components/FormComponent.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="24" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="24" />
+        <state relative-caret-position="60">
+          <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2-vue/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="63" column="18" selection-start-line="63" selection-start-column="8" selection-end-line="63" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2-vue/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-997" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2-vue/js/components/TabComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="31" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2-vue/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="21" column="80" selection-start-line="21" selection-start-column="80" selection-end-line="21" selection-end-column="80" />
         </state>
       </provider>
     </entry>

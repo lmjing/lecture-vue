@@ -5,13 +5,15 @@ import HistoryModel from './models/HistoryModel.js'
 import SearchComponent from './components/FormComponent.js'
 import ResultComponent from './components/ResultComponent.js'
 import ListComponent from './components/ListComponent.js'
+import TabComponent from './components/TabComponent.js'
 
 new Vue({
   el: '#app',
     components: {
       'search-form': SearchComponent,
         'result-form': ResultComponent,
-        'list': ListComponent
+        'list': ListComponent,
+        'tab': TabComponent
     },
   data: {
       query: '',
