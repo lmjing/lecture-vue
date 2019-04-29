@@ -7,7 +7,7 @@
 
 <script>
     export default {
-        template: '#search-form',
+        template: '#form-component',
         props: ['value'],
         data() {
             return {
