@@ -4,7 +4,20 @@
       <h2 class="container">검색</h2>
     </header>
     <div class="container">
-      <form-component v-bind:value="query" v-on:@submit="onSubmit" v-on:@reset="onReset"/>
+      <search-form v-bind:value="query" v-on:@submit="onSubmit" v-on:@reset="onReset"/>
+      <div v-if="submitted">
+        <result-form v-bind:data="searchResult" v-bind:query="query"></result-form>
+      </div>
+      <div v-else>
+        <tab v-bind:data="tabs" v-bind:selected-tab="selectedTab" v-on:@change="onClickTab"></tab>
+        <div v-if="selectedTab === tabs[0]">
+          <list v-bind:data="keywords" type="keyword" v-on:@click="onClickKeyword"></list>
+        </div>
+        <div v-else>
+          <list v-bind:data="history" type="history" v-on:@click="onClickKeyword" v-on:@remove="onClickRemoveHistory"></list>
+        </div>
+      </div>
+
     </div>
   </div>
 </template>
@@ -14,12 +27,18 @@
   import KeywordModel from '@/models/KeywordModel.js'
   import HistoryModel from '@/models/HistoryModel.js'
 
-  import FormComponent from '@/components/FormComponent.vue'
+  import SearchComponent from '@/components/FormComponent'
+  import ResultComponent from '@/components/ResultComponent'
+  import ListComponent from '@/components/ListComponent'
+  import TabComponent from '@/components/TabComponent'
 
 export default {
   name: 'app',
   components: {
-    FormComponent
+    'search-form': SearchComponent,
+    'result-form': ResultComponent,
+    'list': ListComponent,
+    'tab': TabComponent
   },
   data() {
     return {
