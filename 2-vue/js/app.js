@@ -3,11 +3,13 @@ import KeywordModel from './models/KeywordModel.js'
 import HistoryModel from './models/HistoryModel.js'
 
 import SearchForm from './components/FormComponent.js'
+import ResultForm from './components/ResultComponent.js'
 
 new Vue({
   el: '#app',
     components: {
-      'search-form': SearchForm
+      'search-form': SearchForm,
+        'result-form': ResultForm
     },
   data: {
       query: '',
