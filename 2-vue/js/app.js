@@ -2,14 +2,16 @@ import SearchModel from './models/SearchModel.js'
 import KeywordModel from './models/KeywordModel.js'
 import HistoryModel from './models/HistoryModel.js'
 
-import SearchForm from './components/FormComponent.js'
-import ResultForm from './components/ResultComponent.js'
+import SearchComponent from './components/FormComponent.js'
+import ResultComponent from './components/ResultComponent.js'
+import ListComponent from './components/ListComponent.js'
 
 new Vue({
   el: '#app',
     components: {
-      'search-form': SearchForm,
-        'result-form': ResultForm
+      'search-form': SearchComponent,
+        'result-form': ResultComponent,
+        'list': ListComponent
     },
   data: {
       query: '',
