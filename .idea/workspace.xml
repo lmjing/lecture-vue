@@ -2,7 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="670035f1-64fb-4437-91b0-85207d912fbd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/2-vue/js/components/TabComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2-vue/models" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3-component/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3-component/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3-component/js/components/FormComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3-component/js/components/ListComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3-component/js/components/ResultComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3-component/js/components/TabComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3-component/js/models" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3-component/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4-signel-file-component/.babelrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4-signel-file-component/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4-signel-file-component/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4-signel-file-component/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4-signel-file-component/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4-signel-file-component/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4-signel-file-component/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4-signel-file-component/src/App.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4-signel-file-component/src/assets/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4-signel-file-component/src/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4-signel-file-component/webpack.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2-vue/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/2-vue/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2-vue/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/2-vue/js/app.js" afterDir="false" />
@@ -21,8 +40,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/2-vue/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="21" column="80" selection-start-line="21" selection-start-column="80" selection-end-line="21" selection-end-column="80" />
+            <state relative-caret-position="565">
+              <caret line="79" selection-start-line="79" selection-end-line="79" />
             </state>
           </provider>
         </entry>
@@ -73,8 +92,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/2-vue/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="780">
-              <caret line="63" column="18" selection-start-line="63" selection-start-column="8" selection-end-line="63" selection-end-column="18" />
+            <state relative-caret-position="550">
+              <caret line="75" column="2" selection-start-line="75" selection-start-column="2" selection-end-line="75" selection-end-column="2" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
               </folding>
@@ -125,8 +144,8 @@
       <find>current</find>
       <find>getKeywordsHtml</find>
       <find>onReset</find>
-      <find>onClickTab</find>
       <find>list</find>
+      <find>onClickTab</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -150,8 +169,8 @@
         <option value="$PROJECT_DIR$/2-vue/js/components/ResultComponent.js" />
         <option value="$PROJECT_DIR$/2-vue/js/components/ListComponent.js" />
         <option value="$PROJECT_DIR$/2-vue/js/components/FormComponent.js" />
-        <option value="$PROJECT_DIR$/2-vue/js/app.js" />
         <option value="$PROJECT_DIR$/2-vue/js/components/TabComponent.js" />
+        <option value="$PROJECT_DIR$/2-vue/js/app.js" />
         <option value="$PROJECT_DIR$/2-vue/index.html" />
       </list>
     </option>
@@ -260,7 +279,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23603000" />
+    <option name="totallyTimeSpent" value="23717000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -416,16 +435,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/2-vue/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="63" column="18" selection-start-line="63" selection-start-column="8" selection-end-line="63" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/2-vue/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-997" />
@@ -438,10 +447,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/2-vue/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="75" column="2" selection-start-line="75" selection-start-column="2" selection-end-line="75" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/2-vue/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="21" column="80" selection-start-line="21" selection-start-column="80" selection-end-line="21" selection-end-column="80" />
+        <state relative-caret-position="565">
+          <caret line="79" selection-start-line="79" selection-end-line="79" />
         </state>
       </provider>
     </entry>
