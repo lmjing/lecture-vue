@@ -2,8 +2,13 @@ import SearchModel from './models/SearchModel.js'
 import KeywordModel from './models/KeywordModel.js'
 import HistoryModel from './models/HistoryModel.js'
 
+import SearchForm from './components/FormComponent.js'
+
 new Vue({
   el: '#app',
+    components: {
+      'search-form': SearchForm
+    },
   data: {
       query: '',
       submitted: false,
@@ -30,14 +35,12 @@ new Vue({
                 this.history = data
             })
         },
-      onSubmit(e) {
+      onSubmit(query) {
+            this.query = query
           this.search()
       },
         onReset() {
           this.onResetForm()
-        },
-        onKeyup() {
-          if (!this.query.length) this.onResetForm()
         },
         onResetForm() {
           this.query = ''
